@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.big-heading {
+  color: #fff;
+  font-size: 7rem;
+}
+
+.sub-heading {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.info-div {
+  margin: 0 auto;
+}
+
+/*  */
+
+#navbar {
+  justify-content: end;
+  gap: 2rem;
+  height: 7rem;
+  width: 100%;
+  background-color: #162050;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+
+i {
+  color: #364fc7;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 4rem;
+}
+
+#welcome-section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 7rem; */
+  height: 100vh;
+  background-color: #222;
+}
+
+.project-title {
+  padding-top: 10rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  gap: 6rem;
+  padding: 8rem;
+  padding-bottom: 16rem;
+}
+
+.project-card:hover {
+  transform: scale(1.021);
+  transition: 200ms linear;
+}
+
+.project-card:hover {
+  transform: scale(1.021);
+  transition: 200ms linear;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  margin: 0;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  align-items: space-around;
+  display: block;
+}
+
+#projects {
+  height: fit-content;
+  width: 100%;
+  background-color: #666;
+}
+
+#projects p {
+  background-color: #0b1028;
+  font-size: 2rem;
+  /* display: block; */
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#projects a {
+  text-decoration: none;
+}
+
+#info-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #050814;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 2rem;
+  vertical-align: middle;
+}
+
+.div-links {
+  margin: 4rem auto;
+  width: fit-content;
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+
+#freeCodeCamp-logo {
+  filter: invert(10%) sepia(100%) saturate(110%) hue-rotate(10deg)
+    brightness(1119%) contrast(119%);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
